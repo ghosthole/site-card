@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Varela&display=swap');
+
+body {
+    font-family: 'Montserrat';
+    color: rgb(51, 51, 51);
+    line-height: 22.08px;
+    margin: 0;
+    background-color: #f4f4f4
+}
+
+
+
+div.header {
+    background-color: #007BFF;
+    width: 100%;
+    padding: 25px 0 25px 0;
+}
+
+
+.nav-bar {
+    margin: 0 15px 0 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+
+@media screen and (max-width: 430px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header nav a {
+        width: 80%; /* Чтобы кнопки не были слишком широкими на мобильных устройствах */
+        margin-bottom: 10px; /* Добавляем отступ между кнопками */
+    }
+}
+
+
+.header h1.title {
+    text-align: center;
+    font-style: normal;
+    font-size: 52px;
+    line-height: 22.08px;
+    color: rgb(51, 51, 51);
+}
+.header nav {
+    text-align: center;
+}
+.header nav a {
+    font-weight: 600;
+    font-size: 16px;
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    height: 50px;
+    background-color: #1a8ffc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 0;
+}
+
+.header nav a:hover {
+    background-color: #afd0f0;
+}
+
+.header nav a:active {
+    background-color: #5a84ad
+}
+
+
+div.content {
+    margin-top: 5%;
+    padding: 10px;
+    margin: 2% auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 80%;
+}
+
+div.icons {
+    display: flex;
+    gap: 15px;
+}
+
+div.icons i {
+    color: rgb(51, 51, 51);
+}
+
+span.important-text {
+    background-color: #f4f4f4;
+}
+
+div.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+div.column {
+    background-color: #d9eaff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div.column h2 {
+    color: #0047ab;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+div.column p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Анимация при наведении */
+div.column:hover {
+    transform: translateY(-10px); /* Лёгкий подъем */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Более глубокая тень */
+}
+
+@media (max-width: 768px) {
+    div.columns {
+        flex-direction: column; /* Колонки выстраиваются вертикально */
+        gap: 15px;
+    }
+
+    div.column {
+        flex: none; /* Убираем равное распределение ширины */
+        width: 95%; /* Колонки занимают всю ширину контейнера */
+        
+    }
+}
