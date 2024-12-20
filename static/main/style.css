@@ -27,14 +27,18 @@ div.header {
 
 
 @media screen and (max-width: 430px) {
-    .nav-bar {
-        flex-direction: column;
-        align-items: center;
-    }
+    /* .nav-bar {
+    flex-direction: column;
+    align-items: center;
+}
 
-    .header nav a {
-        width: 80%; /* Чтобы кнопки не были слишком широкими на мобильных устройствах */
-        margin-bottom: 10px; /* Добавляем отступ между кнопками */
+.header nav a {
+    width: 80%;
+    margin-bottom: 10px;
+} */
+    
+    .burger-menu {
+        display: flex;
     }
 }
 
@@ -145,3 +149,11 @@ div.column:hover {
         
     }
 }
+
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  } 
